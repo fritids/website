@@ -1,0 +1,14 @@
+<?php if (!defined('IN_PHPBB')) exit; ?><table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr>
+	<td class="forum-buttons" colspan="3" width="100%">
+		<?php if (! $this->_rootref['S_IS_BOT']) {  ?>
+
+			<a href="/forum/viewtopic.php?f=3&t=603" title="Register"><?php echo ((isset($this->_rootref['L_REGISTER'])) ? $this->_rootref['L_REGISTER'] : ((isset($user->lang['REGISTER'])) ? $user->lang['REGISTER'] : '{ REGISTER }')); ?></a>&nbsp;&nbsp;&nbsp;
+			<a href="/forum/viewtopic.php?f=3&t=602&p=3665" title="Avgifter">Avgifter</a>&nbsp;&nbsp;&nbsp;
+			<a href="http://www.hitta.se/kartan/partner?rsh=1&rc=59.66918,17.97516&rn=Arlanda%20RC&tl=1&back=http://www.arlandarc.se&backtext=Tillbaka%20till%20Arlanda%20RC&boxurl=http://www.arlandarc.se&mt=Arlanda%20RC&mc=59.66825,17.97515" title="Vägbeskrivning">Vägbeskrivning</a>&nbsp;&nbsp;&nbsp;
+		<?php } if ($this->_rootref['U_RESTORE_PERMISSIONS']) {  ?><a href="<?php echo (isset($this->_rootref['U_RESTORE_PERMISSIONS'])) ? $this->_rootref['U_RESTORE_PERMISSIONS'] : ''; ?>" title="Restore Permission"><?php echo ((isset($this->_rootref['L_RESTORE_PERMISSIONS'])) ? $this->_rootref['L_RESTORE_PERMISSIONS'] : ((isset($user->lang['RESTORE_PERMISSIONS'])) ? $user->lang['RESTORE_PERMISSIONS'] : '{ RESTORE_PERMISSIONS }')); ?></a>&nbsp;&nbsp;&nbsp;<?php } if (! $this->_rootref['S_IS_BOT']) {  if ($this->_rootref['S_USER_LOGGED_IN']) {  if ($this->_rootref['S_DISPLAY_PM']) {  ?><!--<a href="<?php echo (isset($this->_rootref['U_PRIVATEMSGS'])) ? $this->_rootref['U_PRIVATEMSGS'] : ''; ?>" title="Private Messages"><?php echo (isset($this->_rootref['PRIVATE_MESSAGE_INFO'])) ? $this->_rootref['PRIVATE_MESSAGE_INFO'] : ''; ?></a>&nbsp;&nbsp;&nbsp;--><?php if ($this->_rootref['PRIVATE_MESSAGE_INFO_UNREAD']) {  ?><a href="<?php echo (isset($this->_rootref['U_PRIVATEMSGS'])) ? $this->_rootref['U_PRIVATEMSGS'] : ''; ?>" class="pm-new-link"><?php echo (isset($this->_rootref['PRIVATE_MESSAGE_INFO_UNREAD'])) ? $this->_rootref['PRIVATE_MESSAGE_INFO_UNREAD'] : ''; ?></a>&nbsp;&nbsp;&nbsp;<?php } } } } ?>
+
+		<a href="http://www.arlandamc.nu" title="Arlanda MC" target="_blank" ref="nofollow">Arlanda MC</a><?php if ($this->_rootref['S_USER_LOGGED_IN']) {  } ?>&nbsp;&nbsp;&nbsp;<a href="<?php echo (isset($this->_rootref['U_LOGIN_LOGOUT'])) ? $this->_rootref['U_LOGIN_LOGOUT'] : ''; ?>" title="<?php echo ((isset($this->_rootref['L_LOGIN_LOGOUT'])) ? $this->_rootref['L_LOGIN_LOGOUT'] : ((isset($user->lang['LOGIN_LOGOUT'])) ? $user->lang['LOGIN_LOGOUT'] : '{ LOGIN_LOGOUT }')); ?>"><?php echo ((isset($this->_rootref['L_LOGIN_LOGOUT'])) ? $this->_rootref['L_LOGIN_LOGOUT'] : ((isset($user->lang['LOGIN_LOGOUT'])) ? $user->lang['LOGIN_LOGOUT'] : '{ LOGIN_LOGOUT }')); ?></a>
+	</td>
+</tr>
+</table>

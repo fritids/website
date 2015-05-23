@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.center_content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+div.content_container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+div.content_header {
+	float:none;
+	font-size: 18px;
+	text-align: center;
+	color: #FFFF00;
+	border-bottom: solid thin #333333;
+	background: #111111 url('../forum/styles/black_pearl/theme/images/bg_buttons.gif') top left repeat-x;
+	height: 24px;
+}
+
+div.content_description {
+	margin-top:10px;
+	margin-bottom: 5px;
+	margin-left:10px;
+	margin-right:10px;
+	font-size: 12px;
+}
+
+div.part_container {
+	margin-top: 15px;
+	margin-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	border: solid thin #333333;
+}
+
+div.part_header {
+	font-size: 18px;
+	text-align: center;
+	color: #FFFF00;
+	border-bottom: solid thin #333333;
+	background-color: #0E72A4;
+	height: 24px;
+}
+
+div.part_description {
+	margin-top:10px;
+	margin-bottom: 5px;
+	margin-left:10px;
+	margin-right:10px;
+	font-size: 12px;
+	text-align:center;
+}

@@ -1,0 +1,129 @@
+html {
+	/*background-image: url('http://farm6.staticflickr.com/5584/14225555553_90dd5bb5a4_z.jpg');*/
+	background-color: #111111;
+	background-size: cover;
+	background-position: center center;
+}
+
+body {
+	padding: 0 10px;
+	margin: 0 !important;
+	background-color: rgba(17,17,17,1);
+	transition: all 0.2s linear;
+}
+
+@media only screen and (max-width: 500px) {
+	body {
+		padding: 0;
+	}
+	.leftshadow,
+	.rightshadow {
+		display:none;
+	}
+	#wrapcentre {
+		margin: 0 !important;
+	}
+}
+
+body.bgImgFinishedLoading {
+	background-color: rgba(17,17,17,0.0);
+}
+
+body > div {
+	background-color: rgba(17,17,17,0.8);
+}
+
+.background {
+	background-color: rgba(17,17,17,0.7);
+	width: 100%;
+	min-height: 100%;
+	position: fixed;
+	z-index: -100;
+}
+
+@media only screen and (min-width: 501px) {
+	.background {
+		margin-left: -10px;
+	}
+}
+
+@
+
+/* TABLE */
+td {
+	/*white-space: normal;*/
+}
+
+tr.bg1 {
+	background-color: #666666;
+}
+tr.bg2 {
+	background-color: #555555;
+}
+tr.bg3 {
+	background-color: #000000;
+	color: #FFFFFF;
+	font-weight:bold;
+}
+
+@media only screen and (max-width: 500px) {
+	.only-desktop {
+		display:none;
+	}
+}
+
+
+/* GALLERY IMAGE */
+img.news {
+	max-width: 550px;
+	max-height: 550px;
+}
+
+/* LOGO */
+div#top_logo {
+	position: relative;
+}
+div.time {
+	width:100px;
+	height:50px;
+	color:#FFF;
+	left:15px;
+	top:95px;
+	position:absolute;
+	text-align:left;
+}
+
+div#top_logo img {
+        width: 100%;
+        height: auto;
+	padding: 0px;	
+}
+
+#closed {
+	color:#F00;
+}
+
+#open {
+	color:#0F0;
+}
+
+td.forum-buttons {
+	white-space: normal;
+	line-height: 30px;
+}
+
+td.forum-buttons a {
+	white-space: nowrap;
+}
+
+td.forum-buttons strong {
+	vertical-align: top;
+}
+
+td.np-body, .tablebg, .row1, .row2, .bc-tbl, .bc-links, .legend, .row-post-top, .row-post-body, .row-post-bottom, input, textarea {
+	background: transparent !important;
+}
+
+.postbody img {
+	max-width: 742px;
+}

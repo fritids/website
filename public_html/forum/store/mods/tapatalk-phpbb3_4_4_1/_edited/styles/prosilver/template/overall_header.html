@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="{S_CONTENT_DIRECTION}" lang="{S_USER_LANG}" xml:lang="{S_USER_LANG}">
+<head>
+<!-- INCLUDE _mg_config.html -->
+
+<meta name="google-site-verification" content="_Wa9UOTyxapzcsMZdV9KdMh726b1uk7ttRswPCRD2yQ" /> 
+<meta name="verify-v1" content="8+Sh+AyRjWBKWiZaUxdlNnYrE+5KuhJKfH0ZDgTrT4g=" />
+<meta http-equiv="content-type" content="text/html; charset={S_CONTENT_ENCODING}" />
+<meta http-equiv="content-language" content="{S_USER_LANG}" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta name="copyright" content="2000, 2002, 2005, 2007 phpBB Group" />
+<meta name="Description" content="Arlanda RC - Forum." /> 
+<meta name="Keywords" content="Arlanda, RC, Radiostyrda, Bilar, Bana, Inferno, Kyosho, Sverige, Svealand, Märsta, Flygplats, Forum, Regler, Frekvenser, 1:8" />
+{META}
+<title>{SITENAME} &bull; <!-- IF S_IN_MCP -->{L_MCP} &bull; <!-- ELSEIF S_IN_UCP -->{L_UCP} &bull; <!-- ENDIF -->{PAGE_TITLE}</title>
+{TAPATALK_HEAD}
+<script type="text/javascript">
+var tapatalkdir="{MOBIQUO_NAME}";
+var tapatalk_ipad_msg = '{TAPATALK_IPAD_MSG}';
+var tapatalk_ipad_url  = '{TAPATALK_IPAD_URL}';
+var tapatalk_iphone_msg = '{TAPATALK_IPHONE_MSG}';
+var tapatalk_iphone_url  = '{TAPATALK_ANDROID_URL}';
+var tapatalk_android_msg = '{TAPATALK_ANDROID_MSG}';
+var tapatalk_android_url  = '{TAPATALK_ANDROID_URL}';
+var tapatalk_kindle_msg = '{TAPATALK_KINDLE_MSG}';
+var tapatalk_kindle_url  = '{TAPATALK_KINDLE_URL}';
+var tapatalk_chrome_enable = '{TAPATALK_CHROME_ENABLE}';
+</script>
+<script type="text/javascript" src="{TAPATALKDETECT_JS}"></script>
+
+<link rel="stylesheet" href="{T_STYLESHEET_LINK}" type="text/css" />
+<link rel="shortcut icon" href="http://www.arlandarc.se/favicon.ico" />
+
+<script type="text/javascript" src="{T_TEMPLATE_PATH}/scripts.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+<!-- IF S_USER_PM_POPUP -->
+	if ({S_NEW_PM})
+	{
+		popup('{UA_POPUP_PM}', 400, 225, '_phpbbprivmsg');
+	}
+<!-- ENDIF -->
+
+function popup(url, width, height, name)
+{
+	if (!name)
+	{
+		name = '_popup';
+	}
+
+	window.open(url.replace(/&amp;/g, '&'), name, 'height=' + height + ',resizable=yes,scrollbars=yes,width=' + width);
+	return false;
+}
+
+function jumpto()
+{
+	var page = prompt('{LA_JUMP_PAGE}:', '{ON_PAGE}');
+	var perpage = '{PER_PAGE}';
+	var base_url = '{A_BASE_URL}';
+
+	if (page !== null && !isNaN(page) && page > 0)
+	{
+		document.location.href = base_url.replace(/&amp;/g, '&') + '&start=' + ((page - 1) * perpage);
+	}
+}
+
+/**
+* Find a member
+*/
+function find_username(url)
+{
+	popup(url, 760, 570, '_usersearch');
+	return false;
+}
+
+/**
+* Mark/unmark checklist
+* id = ID of parent container, name = name prefix, state = state [true/false]
+*/
+function marklist(id, name, state)
+{
+	var parent = document.getElementById(id);
+	if (!parent)
+	{
+		eval('parent = document.' + id);
+	}
+
+	if (!parent)
+	{
+		return;
+	}
+
+	var rb = parent.getElementsByTagName('input');
+	
+	for (var r = 0; r < rb.length; r++)
+	{
+		if (rb[r].name.substr(0, name.length) == name)
+		{
+			rb[r].checked = state;
+		}
+	}
+}
+
+<!-- IF ._file -->
+
+	/**
+	* Play quicktime file by determining it's width/height
+	* from the displayed rectangle area
+	*
+	* Only defined if there is a file block present.
+	*/
+	function play_qt_file(obj)
+	{
+		var rectangle = obj.GetRectangle();
+
+		if (rectangle)
+		{
+			rectangle = rectangle.split(',')
+			var x1 = parseInt(rectangle[0]);
+			var x2 = parseInt(rectangle[2]);
+			var y1 = parseInt(rectangle[1]);
+			var y2 = parseInt(rectangle[3]);
+
+			var width = (x1 < 0) ? (x1 * -1) + x2 : x2 - x1;
+			var height = (y1 < 0) ? (y1 * -1) + y2 : y2 - y1;
+		}
+		else
+		{
+			var width = 200;
+			var height = 0;
+		}
+
+		obj.width = width;
+		obj.height = height + 16;
+
+		obj.SetControllerVisible(true);
+
+		obj.Play();
+	}
+<!-- ENDIF -->
+
+// ]]>
+</script>
+<!--[if lt IE 7]>
+<script type="text/javascript" src="{T_TEMPLATE_PATH}/pngfix.js"></script>
+<![endif]-->
+</head>
+<body id="phpbb" class="section-{SCRIPT_NAME} {S_CONTENT_DIRECTION}">
+<!-- Tapatalk Detect body start --> 
+<script type="text/javascript">
+if(typeof(app_ios_id) != "undefined") {
+	tapatalkDetect();
+}
+</script>
+<!-- Tapatalk Detect banner body end -->
+
+<a name="top"></a>
+
+<!-- <div id="wrapper"> -->
+<div style="width:{$MG_GLOBAL_WIDTH};clear:both;margin: 0 auto;">
+<table width="100%" align="center" cellspacing="0" cellpadding="0" border="0">
+	<tr>
+		<td class="leftshadow" width="9" valign="top"><img src="{T_THEME_PATH}/images/spacer.gif" alt="" width="9" height="1" /></td>
+		<td class="np-body" width="100%" valign="top">
+
+<div id="top_logo">
+<div class="time">
+<p><strong>Öppet tider</strong></p>
+<p>Måndag: <span id="closed">Stängd</span></p>
+<p>Tisdag: <span id="closed">Stängd</span></p>
+<p>Onsdag: <span id="open">16.00-21.00</span></p>
+<p>Torsdag: <span id="closed">Stängd</span></p>
+<p>Fredag: <span id="closed">Stängd</span></p>
+<p>Lördag: <span id="closed">Stängd</span></p>
+<p>Söndag: <span id="open">10.00-17.00</span></p>
+</div>
+<a href="{U_INDEX}">{SITE_LOGO_IMG}</a>
+</div>
+
+<!-- INCLUDE menu_block.html -->
+
+<!-- IF S_BOARD_DISABLED and S_USER_LOGGED_IN --><span style="color:#CC3333;">{L_BOARD_DISABLED}</span><!-- ENDIF -->
+
+<div id="wrapcentre">
+
+<!-- IF S_USER_PM_POPUP and S_NEW_PM -->
+<div style="margin-top:50px;margin-bottom:50px;text-align:center;clear:both;"><div class="popuppm-new"><a href="{U_PRIVATEMSGS}">{PRIVATE_MESSAGE_INFO}</a></div></div>
+<!-- ENDIF -->

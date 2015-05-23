@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import "/forum/styles/black_pearl/theme/stylesheet.css";
+@import "/css/default.css";
+@import "/css/header.css";
+@import "/css/anylinkmenu.css";
+
+* {
+	padding: 0px auto;
+}
+
+body {
+	background-color:#111111;
+	color:#FFFFFF;
+}
+
+div.wrapper {
+	margin: 0px auto;
+	clear: both;
+	width: 960px;
+}
+
+div.mainheader {
+	float:left;
+	width: 100%;
+	border-left: solid #333333 thin;
+	border-right: solid #333333 thin;
+}
+
+div.maincontainer {
+	float:left;
+	width:100%;
+	border-left: solid #333333 thin;
+	border-right: solid #333333 thin;
+	border-bottom: solid #333333 thin;
+}
+
+div.footer {
+	float: left;
+	width: 99.95%;
+	border-top: solid 1px #333333;
+	border-bottom: solid 3px #333333;
+	text-align: center;
+}

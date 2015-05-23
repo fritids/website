@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import "/css/index.css";
+
+div.center_content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+}
+
+div.content_container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+div.content_header {
+	float:none;
+	font-size: 18px;
+	text-align: center;
+	color: #FFFF00;
+	border-bottom: solid thin #333333;
+	background: #111111 url('../forum/styles/black_pearl/theme/images/bg_buttons.gif') top left repeat-x;
+	height: 24px;
+}
+
+div.description {
+	margin-top:10px;
+	margin-bottom: 5px;
+	margin-left:10px;
+	margin-right:10px;
+	font-size: 12px;
+}
+
+div.description ul, ol {
+	
+	margin: 10px 0px 10px 40px;
+}
+
+table.weekdays {
+	/* margin: 0px auto; */
+	border: 1px solid #333333;
+	width: 250px;
+}
+
+table.weekdays .bg1 {
+	background-color: #222222;
+}
+
+table.weekdays .bg2 {
+	background-color: #000000;
+}
+
+td.closed {
+	color: #FF0000;
+}
+
+td.opened {
+	color: #00FF00;
+}
